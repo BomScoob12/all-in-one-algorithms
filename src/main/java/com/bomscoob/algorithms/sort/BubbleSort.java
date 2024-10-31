@@ -8,13 +8,17 @@ public class BubbleSort implements ISort<Integer> {
 
     @Override
     public Integer[] sort(Integer[] array) {
-        for (int out = 0; out<array.length; out++) {
-            System.out.println(Arrays.toString(array));
-            for (int in = 0; in<array.length; in++) {
-                if (array[out] > array[in]) {
-                    int temp = array[out];
-                    array[out] = array[in];
-                    array[in] = temp;
+        int len = array.length;
+        for (int i = 0; i<len; i++) {
+            for (int current = 0; current<len - 1; current++) {
+                if (array[current] > array[current + 1]) {
+                    int temp = array[current];
+                    System.out.println("Bubble : " + temp);
+
+                    array[current] = array[current + 1];
+                    array[current + 1] = temp;
+
+                    System.out.println(Arrays.toString(array));
                 }
             }
         }

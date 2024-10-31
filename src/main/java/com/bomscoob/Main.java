@@ -10,10 +10,10 @@ public class Main {
     }
 
     private static void testBubbleSort() {
-        System.out.println("Bubble sort!!!");
+        System.out.println("---Bubble sort---");
         BubbleSort bubbleSort = new BubbleSort();
         Integer[] arr = new Integer[]{2,5,1,7,5,9};
         String sorted = Arrays.toString(bubbleSort.sort(arr));
-        System.out.println(sorted);
+        System.out.printf("Final result: %s",sorted);
     }
 }
