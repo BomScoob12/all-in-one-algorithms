@@ -14,10 +14,8 @@ public class BubbleSort implements ISort<Integer> {
                 if (array[current] > array[current + 1]) {
                     int temp = array[current];
                     System.out.println("Bubble : " + temp);
-
                     array[current] = array[current + 1];
                     array[current + 1] = temp;
-
                     System.out.println(Arrays.toString(array));
                 }
             }
