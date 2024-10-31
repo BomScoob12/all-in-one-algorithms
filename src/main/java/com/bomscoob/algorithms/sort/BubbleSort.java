@@ -9,6 +9,7 @@ public class BubbleSort <T extends Number> implements ISort<T> {
     @Override
     public T[] sort(T[] array) {
         int len = array.length;
+        System.out.printf("Starting at %s\n",Arrays.toString(array));
         for (int i = 0; i<len; i++) {
             for (int current = 0; current<len - 1; current++) {
                 if (array[current].doubleValue() > array[current + 1].doubleValue()) {
