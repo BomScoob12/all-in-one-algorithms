@@ -12,7 +12,7 @@ public class Main {
     private static void testBubbleSort() {
         System.out.println("---Bubble sort---");
 
-        BubbleSort bubbleSort = new BubbleSort();
+        BubbleSort<Integer> bubbleSort = new BubbleSort<>();
         Integer[] arr = new Integer[]{2,5,1,7,5,9,3,31,-3};
         String originalArr = Arrays.toString(arr);
         String sorted = Arrays.toString(bubbleSort.sort(arr));
