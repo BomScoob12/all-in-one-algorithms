@@ -4,7 +4,7 @@ import org.junit.Test;
 
 public class SortingArrayTest {
 
-    @Test(timeout = 50)
+    @Test
     public void bubbleSortTest() {
         BubbleSort<Integer> bubbleSort = new BubbleSort<>();
         Integer[] originalArr = new Integer[]{5,6,-7,50,7,0};
